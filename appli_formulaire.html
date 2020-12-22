@@ -21,7 +21,11 @@
       <nav class="nav nav-pills nav-fill bg-white">
         <a class="nav-link nav-item" href="appli_sondage.html">SONDAGE</a>
         <a class="nav-link nav-item" href="appli_evenement.html">EVENEMENT</a>
-        <a class="nav-link nav-item" href="appli_resultat.html">RESULTAT</a>
+       <a class="nav-link nav-item"" href="appli_resultatNantes.html"
+          >RESULTAT Nantes</a
+        >
+        <a class="nav-link nav-item" href="appli_resultatRennes.html"
+          >RESULTAT Rennes</a>
         <a class="nav-link active nav-item" href="appli_formulaire.html"
           >FORMULAIRES</a
         >
@@ -31,46 +35,89 @@
   </header>
 
   <body>
+    <br />
     <div>
       <h1><strong>FORMULAIRE</strong></h1>
+      <br>
     </div>
-      <div class="form-heading">
-        <span class="prg">Simulation</span>
-      </div>
-      <div>
-        <div class="form-group">
-          <label for="programme" class="col-sm-2 control-label">Départ</label>
-          <div class="col-sm-8">
-            <select class="form-control">
-              <option>Nantes</option>
-              <option>Quimper</option>
-              <option>Pontivy</option>
-              <option>Angers</option>
-              <option>Laval</option>
-              <option>Morlaix</option>
-              <option>Rennes</option>
-              <option>La Roche-sur-Yon</option>
-            </select>
+    <div>
+      <br>
+      <h3>Ajouter un évenement</h3>
+      <div class="block1">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="form-group">
+            <label for="programme" class="col-sm-2 control-label">Lieu</label>
+              <select class="form-control">
+                <option>Nantes</option>
+                <option>Quimper</option>
+                <option>Pontivy</option>
+                <option>Angers</option>
+                <option>Laval</option>
+              </select>
+            </div>
           </div>
         </div>
-        <div class="form-group">
-          <label for="origine" class="col-sm-2 control-label">Arrivée</label>
-            <select class="form-control">
-              <option>Nantes</option>
-              <option>Quimper</option>
-              <option>Pontivy</option>
-              <option>Angers</option>
-              <option>Laval</option>
-              <option>Morlaix</option>
-              <option>Rennes</option>
-              <option>La Roche-sur-Yon</option>
-            </select>
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="form-group">
+            <label for="origine" class="col-sm-2 control-label">Film</label>
+              <select class="form-control">
+                <option>film1</option>
+                <option>film2</option>
+                <option>film3</option>
+                <option>film4</option>
+                <option>film5</option>
+              </select>
+            </div>
           </div>
         </div>
-        <!--</form>-->
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <form method="post">
+                <div class="form-group">
+                  <label class="control-label" for="date">Date</label>
+                  <input
+                class="form-control"
+                id="date"
+                name="date"
+                placeholder="MM/DD/YYY"
+                type="text"
+                  />
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-primary" name="submit" type="submit">
+                  Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </body>
+      <br>
+      <h3>Ajouter un village</h3>
+      <div class="container">
+             <form>
+                <div class="row mb-3">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Nom">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Code Postale">
+                    </div>
+                </div>
+                <br>
+                 <div class="form-group">
+                  <button class="btn btn-primary" name="submit" type="submit">
+                  Submit
+                  </button>
+                </div>
+            </form>
+         </div>
 
   <footer>
     <img class="film2" src="film2.jpg" />
@@ -81,7 +128,7 @@
         Publicités ciblées par centres d'intérêt / Appareils compatibles / Aide
       </center>
     </p>
+     <br>
   </footer>
-
   <script src="appli_formulaire.js"></script>
 </html>
