@@ -17,6 +17,24 @@
 h1 {
   text-align: center;
 }
+.chiffre {
+  font-size: 250px;
+  color: #ffffff;
+}
+p {
+  color: #ffffff;
+}
+.container {
+  display: block;
+  margin-left: 15%;
+  margin-right: auto;
+  background-color: rgb(9, 15, 133);
+}
+.form-check-input {
+  width: 40px;
+  height: 40px;
+}
+
 footer {
   font-size: 12px;
   color: #ffffff;
